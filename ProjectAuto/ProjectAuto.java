@@ -48,11 +48,13 @@ package ProjectAuto;
 
     class Transmission{
         String transmission_type;
+        double transmission_max_torque;
         int gear_number;
 
-        Transmission (String transmission_type, int gear_number) {
+        Transmission (String transmission_type, int gear_number, double transmission_max_torque) {
             this.transmission_type = transmission_type;
             this.gear_number = gear_number;
+            this.transmission_max_torque=transmission_max_torque;
         }
 
         public String getTransmission_type() {
@@ -62,6 +64,8 @@ package ProjectAuto;
         public int getGear_number() {
             return gear_number;
         }
+
+        public double getTransmission_max_torque() {return transmission_max_torque; }
 
     }
 
